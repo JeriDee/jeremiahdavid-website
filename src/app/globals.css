@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-background: #0A0A0A;
+  --color-foreground: #F5F5F5;
+  --color-gold: #C9A84C;
+  --color-dark-card: #141414;
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #0A0A0A;
+  color: #F5F5F5;
+}
+
+@keyframes gold-expand {
+  0% {
+    width: 0;
+    opacity: 0;
+  }
+  100% {
+    width: 6rem;
+    opacity: 1;
+  }
+}
+
+.animate-gold-divider {
+  animation: gold-expand 1.2s ease-out forwards;
+}
